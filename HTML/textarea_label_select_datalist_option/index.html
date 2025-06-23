@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea & Label</title>
+    <link rel="stylesheet" href="../textarea_label_select_datalist_option/styles.css">
+</head>
+<body>
+    <form>
+        <h2>
+            Formulario de contacto
+        </h2>
+
+        <fieldset> <!--SIMPLE INPUTS-->
+            <legend>INFORMACIÓN BÁSICA</legend>
+            <div class="form_input">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" placeholder="John Doe" id="nombre">
+            </div>
+            <div class="form_input">
+                <label for="email">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com" id="email">
+            </div>
+            <div class="form_input">
+                <label for="asunto">Asunto</label>
+                <input type="text" placeholder="Escribe tu asunto acá" id="asunto">
+            </div>
+        </fieldset>
+
+        <!--SELECT & OPTION-->
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-user">
+                    <option value="user1">Particular</option>
+                    <option value="user2">Seguidor</option>
+                    <option value="user3">Empresa grande</option>
+                    <option value="user4">PYME</option>
+                    <option value="user5">Otros</option>
+                </select>
+            </label>
+        </div>
+
+                <!--DATALIST & OPTION-->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="Amigo"></option>
+                    <option value="Página web"></option>
+                    <option value="Anuncio"></option>
+                    <option value="Particular"></option>
+                    <option value="Otros"></option>
+                </datalist>
+            </label>
+        </div>
+
+        <!--TEXTAREA-->
+        <div class="form_input">
+            <label for="mensaje">Mensaje</label>
+            <textarea placeholder="Deja tu mensaje..." id="mensaje"></textarea>
+        </div>
+
+        <div class="form_input">
+            <label> Acepto los <a href="../textarea_label_select_datalist_option/terms.html" target="_blank">términos y condiciones</a>
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

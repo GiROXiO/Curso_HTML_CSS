@@ -1,0 +1,6 @@
+p {
+    height: 100vh;
+    will-change: 100vw;
+    font-size: 30px;
+    overflow: hidden;
+}
