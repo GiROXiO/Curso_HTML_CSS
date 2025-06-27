@@ -1,0 +1,78 @@
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 40px;
+}
+
+/*hover: cuando el mouse esta por encima de algo, cambia un elemento de ese algo*/
+h1:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/*active: cuando se hace click pasa algo con el elemento*/
+h1:active {
+    background-color: #999;
+    color: #fff;
+}
+
+/*Seleccionando el primer li*/
+li:first-child {
+    color: #f00;
+}
+
+/*Seleccionando el enesimo li*/
+li:nth-child(2){
+    color: #0f0;
+}
+
+/*No selecciona todos los li, el numero indica cada cuantos elementos se modifica*/
+li:nth-child(2n){
+    color: #0f0;
+    background-color: #ccc;
+    padding: 5px;
+}
+
+/*Solo selecciona los que sean de tipo li*/
+li:nth-of-type(4) {
+    color: #fff;
+}
+
+/*Seleccionando el ultimo li*/
+li:last-child {
+    color: #00f;
+}
+
+/*Excluir elementos por clase*/
+.lista li:not(.excluir) {
+    color: #fff;
+}
+
+div {
+    border: 5px solid #000;
+    padding: 20px;
+}
+
+/*Solo se ejecuta si esta vacio el elemento*/
+div:empty {
+    border: none;
+}
+
+input[type="checkbox"] {
+    margin: 50px;
+}
+
+/*Cambia dependiendo si esta chequeado o no*/
+input[type="checkbox"]:checked {
+    margin: 0;
+}
+
+/*Seleccionando enlaces no visitados*/
+a:link {
+    color: red;
+}
+
+/*Seleccionando enlaces visitados*/
+a:visited {
+    color: green;
+}

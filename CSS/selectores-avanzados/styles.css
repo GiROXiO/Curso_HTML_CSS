@@ -1,0 +1,31 @@
+/*$= se usa para decir que termina con algo*/
+/*^= se usa para decir que arranca con algo*/
+
+img[src="../../HTML/imagenes/LamineYamal.jpg"] {
+    width: 100%;
+}
+
+/*Se estilizan solo los li que esten dentro de un ul / Selector descendiente
+ul li {
+    color: red;
+}*/
+
+/*Se estilizan solo los strong que esten dentro de un ul / Selector descendiente
+ul strong {
+    color: red;
+}*/
+
+/*El > indica que debe ser hijo directo de / Selector por hijo directo*/
+li > em {
+    color: red;
+}
+
+/*Selecciona solo los que vengan inmediatamente despues / Selector de hermano adyacente
+h1 + p {
+    color: blue;
+}*/
+
+/*Selecciona todos los que vengan despues / Selector de hermanos generales*/
+h1 ~ p {
+    color: blue;
+}

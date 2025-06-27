@@ -1,0 +1,14 @@
+/*Especificidad !important > etiqueta style en el archivo html > etiqueta style dentro del elemento (ej: <h1 style="color: blue") > id > titulo > generico*/
+
+#titulo {
+    color: green;
+}
+
+.titulo {
+    color: red;
+}
+
+/*Como esta !important, el valor que toma es blue, el texto es azul*/
+h1 {
+    color: blue !important;
+}

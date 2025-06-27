@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    /* Propiedad que se va a animar, duracion, funcion con curva de Bezier, delay */
+    transition: left 1s cubic-bezier(0.14, 0.86, 0.32, 0.84) 2s;
+    color: red;
+    position: relative;
+    left: 0;
+}
+
+/* Transicion de caja
+.box:hover {
+    background-color: blue;
+    font-size: 80px;
+    color: #fff;
+} */
+
+/*Se le da estilo a una caja dentro de body*/
+body:hover .box {
+    left: 400px;
+}

@@ -1,0 +1,24 @@
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+
+/*Where no cambia especificidad, is tiene prioridad*/
+section :where(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}
+
+/*Cambia si contiene al elemento*/
+section :has(.elemento1) {
+    background-color: #000;
+    color: #fff;
+}
+
+label:has(input:valid), input:valid{
+    color: blue
+}
+
+label:has(input:invalid), input:invalid{
+    color: red;
+}

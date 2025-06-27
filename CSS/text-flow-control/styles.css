@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0009;
+    white-space: normal;
+    /* Sirve para poner puntos suspensivos si hay desbordamiento
+    text-overflow: ellipsis; */
+    word-break: anywhere;
+    /* Pretty para balancear parrafos */
+    text-wrap: pretty;
+}
+
+h1 {
+    /* Balance para balancear texto simple */
+    text-wrap: balance;
+}

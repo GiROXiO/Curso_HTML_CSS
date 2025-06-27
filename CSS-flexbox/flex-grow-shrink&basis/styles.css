@@ -1,0 +1,42 @@
+/* - Grow: indica cuanto aumenta dependiendo del espacio vacio que haya
+   - Shrink: indica cuanto se encoge cada elemento
+   - Basis: tamaño base del elemento
+*/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    align-items: center;
+    border: 1px solid #000;
+    gap: 20px;
+}
+
+
+.flex-item:nth-child(2n) {
+    background-color: #f77;
+}
+
+.flex-item {
+    background-color: #911;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    /*Grow - Shrink - Basis*/
+    flex: 1 1 100px;
+}
+
+.flex-item:last-child {
+    background-color: #000;
+}
