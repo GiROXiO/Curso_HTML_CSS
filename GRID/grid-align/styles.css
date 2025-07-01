@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    gap: 10px;
+    padding: 10px;
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: space-around;
+    height: 400px;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.grid-item:first-child {
+    background-color: #e66;
+    align-self: stretch;
+}
+
+.grid-item {
+    background-color: #48e;
+    color: #fff;
+    font-size: 40px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
