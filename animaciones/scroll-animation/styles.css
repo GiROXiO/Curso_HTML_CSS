@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    /*height: 200vh;*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* PRIMER EJERCICIO
+div {
+    box-sizing: border-box;
+}
+
+.crecedor {
+    height: 200vh;
+}
+
+.container {
+    scroll-timeline: --containerScroll block;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.box {
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+    position: fixed;
+    width: 100%;
+}
+
+.barra {
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: --containerScroll;
+}
+
+.barra:active {
+    animation-play-state: paused;
+}
+*/
+
+/* SEGUNDO EJERCICIO */
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    height: 400px;
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    animation-range-start: cover -20%;
+    animation-range-end: contain 40%;
+}
+
+.container {
+}
+
+@keyframes llenar-barra {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
